@@ -2,26 +2,141 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+    scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+::-webkit-scrollbar {
+    width: 8px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+::-webkit-scrollbar-thumb {
+    background-color: #D4AF37;
+    border-radius: 6px;
+    height: 2px;
 }
+
+::-webkit-scrollbar-track {
+    background-color: #111;
+}
+
+
+p, h1, h2, h3, h4, h5, h6 {
+    @apply text-brand_1
+}
+
+
+.moving-gradient-text {
+    background: linear-gradient(-45deg, #D4AF37, #fff);
+    background-size: 200% 200%;
+    animation: movingGradient 2s ease infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+.transition-theme {
+    transition: all 0.3s ease-in-out;
+}
+
+.animating-image {
+    @media screen and (min-width: 1024px) {
+        animation-name: movingImage;
+        animation-duration: 0.5s;
+        animation-delay: 8s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+}
+
+.animating-button {
+    animation-name: movingButton;
+    animation-duration: 0.5s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.letter-animation {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: letterEntry 0.5s forwards;
+    animation-delay: 9s;
+}
+
+
+.icon-animation {
+    animation-name: movingButton;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.animated-underline {
+    position: relative;
+    cursor: pointer;
+}
+
+.animated-underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #121212;
+    transform-origin: bottom left;
+    transition: transform 0.5s ease-out;
+    transition-delay: 500ms;
+}
+
+.animated-underline.animating::after {
+    transform: scaleX(1);
+}
+
+
+@keyframes movingButton {
+    0% {
+        transform: translateY(3rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes letterEntry {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes movingGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes movingImage {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+
+    100% {
+        transform: translateX(-2rem) translateY(-2rem);
+    }
+}
+
+
+
