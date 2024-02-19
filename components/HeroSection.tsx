@@ -27,7 +27,7 @@ const HeroSection: React.FC = () => {
                         I'm <span
                             className={'dark:text-brand_3 transition-theme lg:text-6xl'}>Caleb</span></h1>
                     <div className={'text-brand_4 dark:text-brand_1 font-bold pt-2  transition-theme'}>
-                        {introFinished?.isIntroAnimationComplete && <TypeWriterComponent/>}
+                        <TypeWriterComponent/>
                     </div>
                 </div>
 
@@ -47,9 +47,9 @@ const HeroSection: React.FC = () => {
                                 </p>
                                 <div className={'flex flex-col gap-4 text-xl'}>
                                     <div className={'flex flex-col gap-4 text-xl'}>
-                                        <SocialLink link={'https://github.com/CalebWright156?tab=repositories'} icon={faGithub} text={'@Calebwright156'} style={{animationDelay: '9.5s'}}/>
-                                        <SocialLink link={'https://www.linkedin.com/in/caleb-wright-120934177/'} icon={faLinkedin} text={'Caleb Wright'} style={{animationDelay: '9.7s'}}/>
-                                        <SocialLink link={"mailto:calebwright156@gmail.com"} icon={faEnvelope} text={'Lets Chat'} style={{animationDelay: '9.9s'}}/>
+                                        <SocialLink link={'https://github.com/CalebWright156?tab=repositories'} icon={faGithub} text={'@Calebwright156'} style={{animationDelay: '4.5s'}}/>
+                                        <SocialLink link={'https://www.linkedin.com/in/caleb-wright-120934177/'} icon={faLinkedin} text={'Caleb Wright'} style={{animationDelay: '4.7s'}}/>
+                                        <SocialLink link={"mailto:calebwright156@gmail.com"} icon={faEnvelope} text={'Lets Chat'} style={{animationDelay: '4.9s'}}/>
                                     </div>
                                     <DaysSinceStartDate />
 

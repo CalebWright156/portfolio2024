@@ -44,7 +44,7 @@ p, h1, h2, h3, h4, h5, h6 {
     @media screen and (min-width: 1024px) {
         animation-name: movingImage;
         animation-duration: 0.5s;
-        animation-delay: 8s;
+        animation-delay: 3s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
     }
@@ -62,7 +62,7 @@ p, h1, h2, h3, h4, h5, h6 {
     opacity: 0;
     transform: translateY(20px);
     animation: letterEntry 0.5s forwards;
-    animation-delay: 9s;
+    animation-delay: 4s;
 }
 
 

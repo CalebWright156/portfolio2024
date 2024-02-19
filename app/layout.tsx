@@ -20,7 +20,6 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
       <AnimationProvider>
           <html lang="en">
               <body className={`${inter.className} overflow-x-hidden`}>
-                  <IntroSection/>
                   <Header/>
                   {children}
               </body>
