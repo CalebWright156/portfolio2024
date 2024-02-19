@@ -15,30 +15,19 @@ const IntroSection:React.FC = () => {
     }, [progressAmount, animationContext]);
 
     useEffect(() => {
-        if (progressAmount >= 100) {
-            animationContext?.setIntroAnimationComplete(true);
-            document.body.style.overflowY = 'auto';
-        } else {
-            document.body.style.overflowY = 'hidden';
-        }
-    }, [progressAmount, animationContext]);
-
-    useEffect(() => {
         const calculateIntervalTime = (progress: number) => {
             return 30 + progress * -0.35;
         };
 
         const intervalTime = calculateIntervalTime(progressAmount);
+
         const interval = setInterval(() => {
             if (progressAmount < 100) {
                 setProgressAmount(progressAmount + 1);
             }
         }, intervalTime);
 
-        return () => {
-            clearInterval(interval);
-            document.body.style.overflowY = 'auto'; // Reset vertical scrolling when component unmounts
-        };
+        return () => clearInterval(interval);
     }, [progressAmount]);
 
 

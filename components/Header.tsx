@@ -88,19 +88,19 @@ const Header: React.FC = () => {
                     >
                         <ul className="p-4 space-y-6">
                             <Link href={'#home'}>
-                                <li className={'text-brand_1 font-medium cursor-pointer border-2 border-transparent hover:border-b-brand_3 transition-theme w-fit pb-4'}>Home</li>
+                                <li className={'text-brand_1 font-medium cursor-pointer border-2 border-transparent hover:border-b-brand_3 transition-theme w-fit mb-4'}>Home</li>
                             </Link>
                             <Link href={'#about'}>
-                                <li className={'text-brand_1 font-medium cursor-pointer border-2 border-transparent hover:border-b-brand_3 transition-theme w-fit pb-4'}>About</li>
+                                <li className={'text-brand_1 font-medium cursor-pointer border-2 border-transparent hover:border-b-brand_3 transition-theme w-fit mb-4'}>About</li>
                             </Link>
                             <Link href={'#skills'}>
-                                <li className={'text-brand_1 font-medium cursor-pointer border-2 border-transparent hover:border-b-brand_3 transition-theme w-fit pb-4'}>Skills</li>
+                                <li className={'text-brand_1 font-medium cursor-pointer border-2 border-transparent hover:border-b-brand_3 transition-theme w-fit mb-4'}>Skills</li>
                             </Link>
                             <Link href={'#work'}>
-                                <li className={'text-brand_1 font-medium cursor-pointer border-2 border-transparent hover:border-b-brand_3 transition-theme w-fit pb-4'}>Work</li>
+                                <li className={'text-brand_1 font-medium cursor-pointer border-2 border-transparent hover:border-b-brand_3 transition-theme w-fit mb-4'}>Work</li>
                             </Link>
                             <Link href={'#contact'}>
-                                <li className={'text-brand_1 font-medium cursor-pointer border-2 border-transparent hover:border-b-brand_3 transition-theme w-fit pb-4'}>Contact</li>
+                                <li className={'text-brand_1 font-medium cursor-pointer border-2 border-transparent hover:border-b-brand_3 transition-theme w-fit mb-4'}>Contact</li>
                             </Link>
                         </ul>
                     </div>
