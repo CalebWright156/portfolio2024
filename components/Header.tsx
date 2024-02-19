@@ -48,20 +48,20 @@ const Header: React.FC = () => {
     const HeaderItem: React.FC<HeaderItemProps> = ({href}) => {
 
         return (
-            <Link href={`#${href.toLowerCase()}`}>
+            <a href={`#${href.toLowerCase()}`}>
                 <li className={`dark:text-brand_1 text-brand_2 font-medium cursor-pointer border-[3px] border-transparent transition-theme w-fit hover:border-b-brand_3`}>{href}</li>
-            </Link>
+            </a>
         )
     }
 
     return (
         <header
             className={'bg-brand_1 lg:py-5 pt-[1rem] 2xl:pt-[2rem] px-5 lg:px-10 xl:px-[10rem] 2xl:px-[20rem]  text-brand_1 dark:bg-brand_4 transition-theme flex justify-between items-center fixed w-full z-10'}>
-            <Link href={'/'}>
+            <a href={'/'}>
                 <div className={'flex'}>
                     <h2 className={`${darkMode && 'moving-gradient-text'} text-brand_4 font-bold text-xl`}>{isDesktop ? 'Caleb Wright - Software Developer' : 'CW'}</h2>
                 </div>
-            </Link>
+            </a>
             <div className={'flex justify-between gap-[15rem] items-center'}>
                 <div className={'hidden lg:block'}>
                     <ul className={'flex gap-8 text-lg'}>
@@ -87,21 +87,21 @@ const Header: React.FC = () => {
                         onClick={() => setOpen(false)}
                     >
                         <ul className="p-4 space-y-6">
-                            <Link href={'#home'}>
+                            <a href={'#home'}>
                                 <li className={'text-brand_1 font-medium cursor-pointer border-2 border-transparent hover:border-b-brand_3 transition-theme w-fit mb-4'}>Home</li>
-                            </Link>
-                            <Link href={'#about'}>
+                            </a>
+                            <a href={'#about'}>
                                 <li className={'text-brand_1 font-medium cursor-pointer border-2 border-transparent hover:border-b-brand_3 transition-theme w-fit mb-4'}>About</li>
-                            </Link>
-                            <Link href={'#skills'}>
+                            </a>
+                            <a href={'#skills'}>
                                 <li className={'text-brand_1 font-medium cursor-pointer border-2 border-transparent hover:border-b-brand_3 transition-theme w-fit mb-4'}>Skills</li>
-                            </Link>
-                            <Link href={'#work'}>
+                            </a>
+                            <a href={'#work'}>
                                 <li className={'text-brand_1 font-medium cursor-pointer border-2 border-transparent hover:border-b-brand_3 transition-theme w-fit mb-4'}>Work</li>
-                            </Link>
-                            <Link href={'#contact'}>
+                            </a>
+                            <a href={'#contact'}>
                                 <li className={'text-brand_1 font-medium cursor-pointer border-2 border-transparent hover:border-b-brand_3 transition-theme w-fit mb-4'}>Contact</li>
-                            </Link>
+                            </a>
                         </ul>
                     </div>
                 </>
