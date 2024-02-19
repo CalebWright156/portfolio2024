@@ -20,6 +20,29 @@ const Header: React.FC = () => {
     const isDesktop = useIsDesktop();
     const darkMode = useIsDarkMode();
 
+    useEffect(() => {
+        const handleHashChange = () => {
+            const { hash } = window.location;
+            if (hash) {
+                // Assert that the element is indeed an HTMLElement
+                const element = document.querySelector(hash) as HTMLElement;
+                if (element) {
+                    window.scrollTo({
+                        top: element.offsetTop - 20, // Adjust headerHeight accordingly
+                        behavior: "smooth"
+                    });
+                }
+            }
+        };
+
+        window.addEventListener('hashchange', handleHashChange, false);
+
+        return () => {
+            window.removeEventListener('hashchange', handleHashChange, false);
+        };
+    }, []);
+
+
     const link: string[] = ['Home', 'About', 'Skills', 'Work', 'Contact']
 
     const HeaderItem: React.FC<HeaderItemProps> = ({href}) => {
@@ -33,7 +56,7 @@ const Header: React.FC = () => {
 
     return (
         <header
-            className={'bg-brand_1 lg:py-5 pt-[1rem] 2xl:pt-[2rem] px-5 lg:px-10 xl:px-[10rem] 2xl:px-[20rem]  text-brand_1 dark:bg-brand_4 transition-theme flex justify-between items-center'}>
+            className={'bg-brand_1 lg:py-5 pt-[1rem] 2xl:pt-[2rem] px-5 lg:px-10 xl:px-[10rem] 2xl:px-[20rem]  text-brand_1 dark:bg-brand_4 transition-theme flex justify-between items-center fixed w-full z-10'}>
             <Link href={'/'}>
                 <div className={'flex'}>
                     <h2 className={`${darkMode && 'moving-gradient-text'} text-brand_4 font-bold text-xl`}>{isDesktop ? 'Caleb Wright - Software Developer' : 'CW'}</h2>
@@ -60,13 +83,25 @@ const Header: React.FC = () => {
                         <Hamburger toggled={isOpen} toggle={setOpen} color={darkMode ? 'white' : 'black'} />
                      </div>
                     <div
-                        className={`${isOpen ? 'translate-x-0' : 'translate-x-full'} fixed top-[3rem] right-0 w-[300px] h-full bg-brand_2 dark:bg-brand_4 transition-theme z-40`}>
+                        className={`${isOpen ? 'translate-x-0' : 'translate-x-full'} fixed top-[4rem] right-0 w-[300px] h-full bg-brand_2 dark:bg-brand_4 transition-theme z-40`}
+                        onClick={() => setOpen(false)}
+                    >
                         <ul className="p-4 space-y-6">
-                            <li className={'text-brand_1 font-medium cursor-pointer border-2 border-transparent hover:border-b-brand_3 transition-theme w-fit'}>Home</li>
-                            <li className={'text-brand_1 font-medium cursor-pointer border-2 border-transparent hover:border-b-brand_3 transition-theme w-fit'}>About</li>
-                            <li className={'text-brand_1 font-medium cursor-pointer border-2 border-transparent hover:border-b-brand_3 transition-theme w-fit'}>Skills</li>
-                            <li className={'text-brand_1 font-medium cursor-pointer border-2 border-transparent hover:border-b-brand_3 transition-theme w-fit'}>Work</li>
-                            <li className={'text-brand_1 font-medium cursor-pointer border-2 border-transparent hover:border-b-brand_3 transition-theme w-fit'}>Contact</li>
+                            <Link href={'#home'}>
+                                <li className={'text-brand_1 font-medium cursor-pointer border-2 border-transparent hover:border-b-brand_3 transition-theme w-fit pb-4'}>Home</li>
+                            </Link>
+                            <Link href={'#about'}>
+                                <li className={'text-brand_1 font-medium cursor-pointer border-2 border-transparent hover:border-b-brand_3 transition-theme w-fit pb-4'}>About</li>
+                            </Link>
+                            <Link href={'#skills'}>
+                                <li className={'text-brand_1 font-medium cursor-pointer border-2 border-transparent hover:border-b-brand_3 transition-theme w-fit pb-4'}>Skills</li>
+                            </Link>
+                            <Link href={'#work'}>
+                                <li className={'text-brand_1 font-medium cursor-pointer border-2 border-transparent hover:border-b-brand_3 transition-theme w-fit pb-4'}>Work</li>
+                            </Link>
+                            <Link href={'#contact'}>
+                                <li className={'text-brand_1 font-medium cursor-pointer border-2 border-transparent hover:border-b-brand_3 transition-theme w-fit pb-4'}>Contact</li>
+                            </Link>
                         </ul>
                     </div>
                 </>

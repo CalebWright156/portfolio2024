@@ -15,25 +15,36 @@ const IntroSection:React.FC = () => {
     }, [progressAmount, animationContext]);
 
     useEffect(() => {
+        if (progressAmount >= 100) {
+            animationContext?.setIntroAnimationComplete(true);
+            document.body.style.overflowY = 'auto';
+        } else {
+            document.body.style.overflowY = 'hidden';
+        }
+    }, [progressAmount, animationContext]);
+
+    useEffect(() => {
         const calculateIntervalTime = (progress: number) => {
             return 30 + progress * -0.35;
         };
 
         const intervalTime = calculateIntervalTime(progressAmount);
-
         const interval = setInterval(() => {
             if (progressAmount < 100) {
                 setProgressAmount(progressAmount + 1);
             }
         }, intervalTime);
 
-        return () => clearInterval(interval);
+        return () => {
+            clearInterval(interval);
+            document.body.style.overflowY = 'auto'; // Reset vertical scrolling when component unmounts
+        };
     }, [progressAmount]);
 
 
     return (
         <div
-            className={`absolute bg-white z-[300] w-[100vw] h-[100vh] flex justify-center items-center flex-col transition-transform duration-[1000ms] delay-300 ease-in-out ${progressAmount >= 100 ? 'translate-y-[-100vh]' : ''}`}>
+            className={`${progressAmount >= 100 ? 'absolute' : 'fixed'} fixed bg-white z-[300] w-[100vw] h-[100vh] flex justify-center items-center flex-col transition-transform duration-[1000ms] delay-300 ease-in-out ${progressAmount >= 100 ? 'translate-y-[-100vh]' : ''}`}>
 
             <h3 className={`text-brand_4 font-bold text-4xl pb-5 animate-bounce ${progressAmount >= 100 && 'opacity-0 transition-all duration-500'}`}>Loading</h3>
             <CircularProgress progress={progressAmount}/>
