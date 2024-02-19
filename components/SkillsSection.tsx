@@ -14,18 +14,6 @@ import Image from "next/image";
 
 const skills = [
     {
-        title: "HTML",
-        icon: "1024px-HTML5_Badge.png"
-    },
-    {
-        title: "CSS",
-        icon: "CSS3_logo.png"
-    },
-    {
-        title: "Javascript",
-        icon: "javascript-1.svg"
-    },
-    {
         title: "React",
         icon: "React-icon.png"
     },
@@ -36,6 +24,18 @@ const skills = [
     {
         title: "Typescript",
         icon: "Typescript_logo_2020.png"
+    },
+    {
+        title: "HTML",
+        icon: "1024px-HTML5_Badge.png"
+    },
+    {
+        title: "CSS",
+        icon: "CSS3_logo.png"
+    },
+    {
+        title: "Javascript",
+        icon: "javascript-1.svg"
     },
     {
         title: "Nodejs",

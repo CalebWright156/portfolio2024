@@ -32,7 +32,7 @@ const HeroSection: React.FC = () => {
                 </div>
 
                 <div>
-                    <div className={'flex w-100 justify-between pb-5'}>
+                    <div className={'flex flex-col md:flex-row w-100 justify-between pb-5'}>
                         <div>
                             <a href="/CalebWrightResume.pdf" download>
                                 <button
@@ -56,7 +56,7 @@ const HeroSection: React.FC = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className={'lg:mb-12'}>
+                        <div className={'hidden md:block lg:mb-12'}>
                             <ImageWrapper src="/profile.jpeg" alt="Profile Picture"/>
                         </div>
                     </div>

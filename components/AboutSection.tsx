@@ -11,7 +11,7 @@ const AboutSection: React.FC  = () => {
             </div>
 
             <TextImageCol
-                text={"I am a 22-year-old, Australian software developer looking for junior front-end or full-stack development roles. As a software developer, I am skilled in applying the rules and theories of software engineering to the creation, design, maintenance, and testing of computer software and website design. I have a passion for continuous learning, problem-solving, and enjoy working in a team environment. Listed below are my work, education, skills, and a few of my recent projects. I have built a website with links to all of my projects and code, which will give you a better understanding of my skillset and abilities."}
+                text={"With a passion for software engineering cultivated through years of dedicated study and practical experience, I bring a dynamic skill set to the table. Having honed my expertise at YoungShand, a prominent digital media company, I've played pivotal roles in developing and maintaining various websites, assuming leadership as a lead developer on multiple projects. My commitment to innovation and continual learning, coupled with hands-on experience, positions me as a valuable asset in any software engineering endeavor. Based in Auckland, New Zealand, at 23 years old, I am poised to contribute meaningfully to the ever-evolving tech landscape."}
             />
         </Section>
     );
