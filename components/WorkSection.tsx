@@ -28,7 +28,7 @@ const WorkSection:React.FC = () => {
             role: 'Full Stack Developer',
             technologies: ['React', 'Next.js', 'Styled Components', 'Wordpress', 'PHP', 'GraphQL'],
             description: `I was part of the team that built the UI for the new Craigs Investment Partner Website. Later on I was also the lead on developing a plugin that enabled the client to use redirects within the context of our headless architecture.`,
-            link: 'https://oceaniahealthcare.co.nz/location/the-helier'
+            link: 'https://craigsip.com'
         },
     ]
 
