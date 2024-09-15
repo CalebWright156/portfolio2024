@@ -38,19 +38,19 @@ const TextImageCol:React.FC<TextImageColProps> = ({ text}) => {
                     <AccordionItem value="item-1" className={'border-b-brand_4 dark:border-b-brand_1'}>
                         <AccordionTrigger className={'text-brand_4 dark:text-brand_1'}>What was this website built with?</AccordionTrigger>
                         <AccordionContent className={'text-brand_4 dark:text-brand_1'}>
-                            This website was built in Next.js using the app router, as well as typescript and tailwind
+                        This site was developed with Next.js, utilizing the app router, along with TypeScript and Tailwind CSS.
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-2" className={'border-b-brand_4 dark:border-b-brand_1'}>
                         <AccordionTrigger className={'text-brand_4 dark:text-brand_1'}>Have I ever led a project before?</AccordionTrigger>
                         <AccordionContent className={'text-brand_4 dark:text-brand_1'}>
-                            Yes I have! in 2023 I was the lead developer on the rebuild of the <Link target={'_blank'} className={'text-[#FF3333] font-bold hover:underline'} href={'https://youngshand.com/'}>YoungShand</Link> website. I was responsible for the front-end and back-end development of the website. I worked closely with the design team to ensure the website was built to the design specifications. I also worked closely with the project manager to ensure the project was delivered on time and on budget. Check it out!
+                        Absolutely! In 2023, I was the lead developer for the rebuild of the <Link target="_blank" className="text-[#FF3333] font-bold hover:underline" href="https://youngshand.com/">YoungShand</Link> website. I handled both front-end and back-end development, collaborating closely with the design team to meet specifications and the project manager to ensure timely, on-budget delivery. Feel free to check it out!
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-3" className={'border-b-brand_4 dark:border-b-brand_1'}>
                         <AccordionTrigger className={'text-brand_4 dark:text-brand_1'}>What am I doing when I'm not programming</AccordionTrigger>
                         <AccordionContent className={'text-brand_4 dark:text-brand_1'}>
-                            When I'm not programming, you can find me hanging out with my wife and 1 year old son, watching tennis or coding a hobby project  (yes, I do code in my spare time).
+                        Outside of programming, I enjoy spending time with my wife and our 2-year-old son, watching tennis, or working on personal coding projects.
                         </AccordionContent>
                     </AccordionItem>
                 </Accordion>

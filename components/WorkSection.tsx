@@ -7,7 +7,7 @@ const WorkSection:React.FC = () => {
 
     const WorkItems = [
         {
-            imageSrc: '/YSWork.png',
+            imageSrc: '/YSWork.webp',
             projectName: 'YoungShand Rebuild',
             role: 'Lead Developer',
             technologies: ['React', 'Next.js', 'Styled Components', 'Strapi', 'GraphQL'],
@@ -15,7 +15,7 @@ const WorkSection:React.FC = () => {
             link: 'https://youngshand.com'
         },
         {
-            imageSrc: '/OceaniaWork.png',
+            imageSrc: '/OceaniaWork.webp',
             projectName: 'Oceania Helier Redesign',
             role: 'Lead Developer',
             technologies: ['React', 'Next.js', 'Sass'],
@@ -23,7 +23,7 @@ const WorkSection:React.FC = () => {
             link: 'https://oceaniahealthcare.co.nz/location/the-helier'
         },
         {
-            imageSrc: '/CraigsWork.png',
+            imageSrc: '/CraigsWork.webp',
             projectName: 'Craigs Investment Partners',
             role: 'Full Stack Developer',
             technologies: ['React', 'Next.js', 'Styled Components', 'Wordpress', 'PHP', 'GraphQL'],

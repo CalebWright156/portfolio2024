@@ -11,7 +11,7 @@ const AboutSection: React.FC  = () => {
             </div>
 
             <TextImageCol
-                text={"With a passion for software engineering cultivated through years of dedicated study and practical experience, I bring a dynamic skill set to the table. Having honed my expertise at YoungShand, a prominent digital media company, I've played pivotal roles in developing and maintaining various websites, assuming leadership as a lead developer on multiple projects. My commitment to innovation and continual learning, coupled with hands-on experience, positions me as a valuable asset in any software engineering endeavor. Based in Auckland, New Zealand, at 23 years old, I am poised to contribute meaningfully to the ever-evolving tech landscape."}
+                text={"Experienced Full Stack Developer available for contract work, specializing in both custom web applications and WordPress website development. With a proven track record at YoungShand, I've led projects that enhance digital experiences for high-profile clients. Proficient in modern web technologies and CMS platforms, I bring a dynamic skill set and a commitment to delivering exceptional results. Eager to contribute my expertise to innovative projects in need of a versatile and dedicated developer."}
             />
         </Section>
     );

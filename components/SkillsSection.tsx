@@ -22,6 +22,10 @@ const skills = [
         icon: "next-js-icon-2048x2048-5dqjgeku.png"
     },
     {
+        title: "Wordpress",
+        icon: "Wordpress-Logo.png"
+    },
+    {
         title: "Typescript",
         icon: "Typescript_logo_2020.png"
     },
@@ -56,10 +60,6 @@ const skills = [
     {
         title: "Styled Components",
         icon: "styled-components.png"
-    },
-    {
-        title: "Wordpress",
-        icon: "Wordpress-Logo.png"
     },
     {
         title: "Graphql",
