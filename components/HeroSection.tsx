@@ -36,8 +36,7 @@ const HeroSection: React.FC = () => {
                         <div>
                             <a href="/CalebWrightResume-2024.pdf" download>
                                 <button
-                                    className={'bg-brand_4 dark:bg-brand_3 text-brand_1 dark:text-brand_4 font-bold rounded-xl px-10 py-3 transition-theme hover:text-brand_1 hover:bg-brand_3 cursor-pointer hover:dark:bg-brand_4 hover:dark:text-brand_3 lg:px-[3rem] lg:py-[1rem] lg:text-xl'}>Download
-                                    CV
+                                    className={'bg-brand_4 dark:bg-brand_3 text-brand_1 dark:text-brand_4 font-bold rounded-xl px-10 py-3 transition-theme hover:text-brand_1 hover:bg-brand_3 cursor-pointer hover:dark:bg-brand_4 hover:dark:text-brand_3 lg:px-[3rem] lg:py-[1rem] lg:text-xl'}>Download CV
                                     <FontAwesomeIcon icon={faDownload} className={'ml-3'}/>
                                 </button>
                             </a>
