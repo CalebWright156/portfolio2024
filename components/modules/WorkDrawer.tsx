@@ -60,7 +60,7 @@ const WorkDrawer:React.FC<WorkDrawerProps> = ({imageSrc, projectName, link, role
                     </DrawerHeader>
                     <DrawerFooter>
                         <DrawerClose>
-                            <button className={'dark:text-brand_1'}>Close</button>
+                            <button className={'dark:text-brand_1 underline'}>Close</button>
                         </DrawerClose>
                     </DrawerFooter>
                 </DrawerContent>

@@ -30,6 +30,14 @@ const WorkSection:React.FC = () => {
             description: `I was part of the team that built the UI for the new Craigs Investment Partner Website. Later on I was also the lead on developing a plugin that enabled the client to use redirects within the context of our headless architecture.`,
             link: 'https://craigsip.com'
         },
+        {
+            imageSrc: '/Hot-Bargain.webp',
+            projectName: 'Hot Bargain Rebuild',
+            role: 'Lead Developer',
+            technologies: ['wordpress', 'PHP', 'JavaScript', 'CSS'],
+            description: `A complete rebuild of the Hot Bargain website. I was responsible for the front-end development of the site. I used Wordpress to build the site, with the website builder Elementor and used PHP and JavaScript to add custom functionality to the site.`,
+            link: 'https://www.hotbargain.com.au'
+        },
     ]
 
     return (
