@@ -34,7 +34,7 @@ const HeroSection: React.FC = () => {
                 <div>
                     <div className={'flex flex-col md:flex-row w-100 justify-between pb-5'}>
                         <div>
-                            <a href="/CalebWrightResume-2024.pdf" download>
+                            <a href="/CalebWrightResume-new-2024.pdf" download>
                                 <button
                                     className={'bg-brand_4 dark:bg-brand_3 text-brand_1 dark:text-brand_4 font-bold rounded-xl px-10 py-3 transition-theme hover:text-brand_1 hover:bg-brand_3 cursor-pointer hover:dark:bg-brand_4 hover:dark:text-brand_3 lg:px-[3rem] lg:py-[1rem] lg:text-xl'}>Download CV
                                     <FontAwesomeIcon icon={faDownload} className={'ml-3'}/>
